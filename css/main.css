@@ -134,7 +134,7 @@ label {
 }
 
 /*---------------------------------------------*/
-button {
+#button {
 	outline: none !important;
 	border: none;
 	background: transparent;
