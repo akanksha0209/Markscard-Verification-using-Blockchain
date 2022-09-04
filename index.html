@@ -3,6 +3,7 @@
 <head>
 	<title>Login V3</title>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <!--===============================================================================================-->	
@@ -26,6 +27,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 <!--===============================================================================================-->
 </head>
 <body>
@@ -59,13 +62,17 @@
 							Remember me
 						</label>
 					</div> -->
+					<button id='loginButton' onclick="Connect()" class="mx-auto rounded-md p-2 bg-purple-500 text-white">
+						Login with MetaMask
+					  </button>
+					<!-- <input id="connect" type="button" value="Login" onclick="Connect()"> -->
 
-					<div class="flex-col space-y-2 justify-center items-center">
+					<!-- <div class="flex-col space-y-2 justify-center items-center">
 						<button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-purple-500 text-white">
 						  Login with MetaMask
 						</button>
 						<p id='userWallet' class='text-lg text-gray-600 my-2'></p>
-					</div>
+					</div> -->
 
 					<!-- <div class="text-center p-t-90">
 						<a class="txt1" href="#">
@@ -112,12 +119,15 @@
 							Login
 						</button>
 					</div> -->
-					<div class="flex-col space-y-2 justify-center items-center">
+					<button id='loginButton' onclick="Connect()" class="mx-auto rounded-md p-2 bg-purple-500 text-white">
+						Login with MetaMask
+					  </button>
+					<!-- <div class="flex-col space-y-2 justify-center items-center">
 						<button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-purple-500 text-white">
 						  Login with MetaMask
 						</button>
 						<p id='userWallet' class='text-lg text-gray-600 my-2'></p>
-					  </div>
+					  </div> -->
 
 					<!-- <div class="text-center p-t-90">
 						<a class="txt1" href="#">
